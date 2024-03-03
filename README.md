@@ -1,5 +1,8 @@
-## React App Template
+## Simple Text Editor Web app
 
-- Tailwind
-- React
-- ParcelJS
+### How to run
+
+```
+#!/bin/sh
+yarn start
+```
