@@ -25,7 +25,7 @@
   },
   "scripts": {
     "start": "parcel",
-    "build": "parcel build --no-source-maps",
+    "build": "parcel build --no-source-maps --public-url ./cuneiform/",
     "clean": "rm -rf dist .parcel-cache",
     "format": "prettier --write src/**/* -u --no-error-on-unmatched-pattern"
   },
