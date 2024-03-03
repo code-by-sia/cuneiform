@@ -27,6 +27,7 @@
   "scripts": {
     "start": "parcel",
     "build": "parcel build --no-source-maps --public-url .",
+    "postbuild": "cp ./dist/index.html ./dist/404.html",
     "clean": "rm -rf dist .parcel-cache",
     "format": "prettier --write src/**/* -u --no-error-on-unmatched-pattern"
   },
