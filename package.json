@@ -2,6 +2,7 @@
   "name": "cuneiform",
   "version": "1.0.0",
   "source": "src/index.html",
+  "homepage": "https://code-by-sia.github.io/cuneiform/",
   "repository": "git@github.com:code-by-sia/cuneiform.git",
   "author": "Siamand <me@siamand.cc>",
   "license": "MIT",
