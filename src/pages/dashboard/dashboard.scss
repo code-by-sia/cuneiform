@@ -1,3 +1,5 @@
 .dashboard-page {
+    @apply flex items-center justify-center text-3xl font-extralight;
 
+    small { @apply text-xs text-gray-500;}
 }
