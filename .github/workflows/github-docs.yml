@@ -17,9 +17,9 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: 20.11.0
-        cache: 'npm'
-    - run: npm ci
-    - run: npm run build
+        cache: 'yarn'
+    - run: yarn install 
+    - run: yarn build
     - name: Upload GitHub Pages artifact
       uses: actions/upload-pages-artifact@v3.0.1
       with:
