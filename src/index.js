@@ -8,7 +8,7 @@ import { store } from './store'
 
 import './index.scss'
 
-const router = createBrowserRouter(routes)
+const router = createBrowserRouter(routes, { basename: '/cuneiform' })
 const root = document.getElementById('app')
 
 ReactDOM.createRoot(root).render(
