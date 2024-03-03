@@ -1,4 +1,4 @@
-name: Build and Upload github pages
+name: Deploy
 
 on:
   push:
