@@ -1,0 +1,22 @@
+.avatar {
+  @apply relative;
+
+  img {
+    @apply w-8 h-8 object-cover rounded-full border-2 shadow border-white;
+  }
+
+  .dot {
+    @apply bottom-0 left-6 absolute   w-2 h-2 bg-green-400 border border-white dark:border-gray-800 rounded-full shadow-sm;
+  }
+  &.small img {
+    @apply w-4 h-4 border-none;
+  }
+
+  &.medium img {
+    @apply w-10 h-10;
+  }
+
+  &.no-border img {
+    @apply border-none;
+  }
+}

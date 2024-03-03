@@ -1,0 +1,27 @@
+li.date {
+  @apply mx-3 p-3 flex  gap-1 items-center relative;
+
+  h1 {
+    @apply text-4xl;
+  }
+
+  div {
+    @apply flex-1 flex flex-col border-b py-2 items-start uppercase font-medium leading-none;
+    span {
+      @apply text-xs font-semibold;
+    }
+    small {
+      @apply text-neutral-400  text-xs;
+    }
+  }
+
+  .icon {
+    @apply absolute end-1 text-primary h-4 stroke-2;
+  }
+
+  &.today {
+    h1 {
+      @apply text-primary;
+    }
+  }
+}

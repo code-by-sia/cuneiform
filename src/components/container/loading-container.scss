@@ -1,0 +1,6 @@
+.loading-container {
+  @apply flex flex-1 w-full items-center justify-center text-gray-400 gap-2;
+  .icon {
+    @apply h-5 animate-spin stroke-1;
+  }
+}

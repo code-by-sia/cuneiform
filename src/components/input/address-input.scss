@@ -1,0 +1,22 @@
+.address-input {
+  @apply flex flex-col gap-0;
+
+  small {
+    @apply text-zinc-500 text-xs;
+  }
+
+  .address input {
+    @apply p-2 bg-transparent;
+
+    &:first-child {
+      @apply rounded-b-none;
+    }
+    &:last-child {
+      @apply rounded-t-none border-t-transparent;
+    }
+  }
+
+  .zip-code {
+    @apply flex gap-1 py-2;
+  }
+}

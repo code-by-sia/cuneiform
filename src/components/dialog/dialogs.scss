@@ -1,0 +1,7 @@
+dialog {
+  @apply rounded-xl shadow-xl border;
+
+  &::backdrop {
+    @apply backdrop-blur;
+  }
+}

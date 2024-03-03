@@ -1,0 +1,25 @@
+.tab {
+  &-header {
+    @apply flex flex-col leading-none border-b;
+
+    button {
+      @apply inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all text-zinc-400 dark:text-zinc-200;
+
+      &:disabled {
+        @apply pointer-events-none opacity-50;
+      }
+
+      &:focus-visible {
+        @apply outline-none ring-2  ring-ring ring-offset-2;
+      }
+
+      &.active {
+        @apply bg-background text-foreground shadow;
+      }
+    }
+  }
+
+  .tablist {
+    @apply inline-flex h-9 gap-1 items-center justify-center rounded-lg bg-muted p-1 text-muted-foreground mx-auto outline-none;
+  }
+}

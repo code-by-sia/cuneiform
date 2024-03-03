@@ -1,0 +1,19 @@
+.home.page {
+  @apply flex flex-row bg-white  overflow-hidden;
+
+  .outlet {
+    @apply flex flex-1 shadow-sm h-full w-full border-l overflow-auto;
+    .page-header {
+      @apply sticky top-0 z-50 backdrop-blur-lg;
+    }
+  }
+  .main-sidebar-footer {
+    @apply p-6 w-full flex items-center;
+    a {
+      @apply w-full;
+    }
+    button {
+      @apply w-full justify-start px-1 text-zinc-600 hover:text-zinc-900;
+    }
+  }
+}

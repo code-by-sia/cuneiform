@@ -1,0 +1,14 @@
+.search-input {
+  @apply flex items-center relative flex-1;
+
+  .input {
+    @apply indent-6 h-full p-2 min-w-64 text-gray-800;
+  }
+
+  & > input::-webkit-textfield-decoration-container {
+  }
+
+  .search-icon {
+    @apply h-4 ms-2 absolute text-zinc-500;
+  }
+}

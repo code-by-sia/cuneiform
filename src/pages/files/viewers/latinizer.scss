@@ -1,0 +1,7 @@
+.latinizer {
+    @apply max-h-full flex-1 border-s;
+
+    div.options { @apply border-b p-3 text-sm;}
+
+    pre {@apply flex-1 overflow-auto p-3; }
+}

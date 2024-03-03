@@ -1,0 +1,6 @@
+.tag {
+  @apply flex items-center flex-1 text-xs whitespace-nowrap gap-1;
+  .icon {
+    @apply h-4;
+  }
+}

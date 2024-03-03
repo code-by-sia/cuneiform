@@ -1,0 +1,62 @@
+.data-table {
+  @apply rounded-md border m-6;
+
+  .warpper {
+    @apply relative w-full overflow-auto;
+  }
+
+  table {
+    @apply w-full caption-bottom text-sm;
+
+    thead {
+      tr {
+        @apply border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted;
+
+        th {
+          @apply h-10 px-2 text-left align-middle font-medium text-muted-foreground;
+
+          &:has([role='checkbox']) {
+            @apply pr-0;
+          }
+          & > [role='checkbox'] {
+            @apply translate-y-[2px];
+          }
+
+          div {
+            @apply flex items-center justify-center text-center space-x-2;
+
+            .icon {
+              @apply ml-2 h-4 w-4;
+            }
+          }
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        @apply border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted;
+        &:last-child {
+          @apply border-0;
+        }
+        td {
+          @apply p-2 align-middle;
+
+          &:has([role='checkbox']) {
+            @apply pr-0;
+          }
+          & > [role='checkbox'] {
+            @apply translate-y-[2px];
+          }
+        }
+      }
+    }
+  }
+}
+
+.data-table td .enum {
+  @apply flex gap-2 items-center;
+  .icon {
+    @apply h-5;
+  }
+}

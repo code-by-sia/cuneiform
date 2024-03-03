@@ -1,0 +1,28 @@
+.configuration-page {
+  @apply flex flex-1 bg-zinc-600 items-center justify-center;
+
+  section {
+    @apply flex flex-col max-w-xl w-full bg-white rounded-xl relative  shadow-xl;
+    h1 {
+      @apply flex items-center justify-between font-extralight text-xl p-6 border-b border-dashed;
+    }
+    & > .wrapper {
+      @apply flex flex-1 p-12  items-center justify-center;
+
+      .illustration {
+        @apply w-64;
+      }
+    }
+
+    footer {
+      @apply p-6 flex gap-1 justify-center;
+    }
+  }
+
+  .icon {
+    @apply h-10 stroke-1;
+  }
+  button {
+    @apply p-6;
+  }
+}

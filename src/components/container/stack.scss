@@ -1,0 +1,10 @@
+div.stack {
+    @apply flex;
+
+    &.h { @apply flex-row items-center; }
+    &.v { @apply flex-col justify-center; }
+
+    &.fill { @apply flex-1; }
+
+    &.spaced { @apply gap-2; }
+}

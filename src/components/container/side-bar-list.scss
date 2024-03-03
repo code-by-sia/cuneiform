@@ -1,0 +1,9 @@
+.side-bar-list-page {
+  @apply border-e overflow-hidden w-80;
+
+  &:hover {
+    .header {
+      @apply shadow;
+    }
+  }
+}

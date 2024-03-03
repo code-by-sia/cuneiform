@@ -1,0 +1,7 @@
+.loading-view {
+  @apply flex items-center justify-center w-full h-full;
+
+  .icon {
+    @apply h-6 animate-spin;
+  }
+}

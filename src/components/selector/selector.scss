@@ -1,0 +1,59 @@
+div.selector {
+  @apply flex flex-col relative min-w-[10em] w-auto;
+
+  .selector-trigger {
+    @apply flex-1 flex items-center justify-between pe-1.5 ps-2 py-1;
+
+    &:focus-visible {
+      @apply outline-none ring-2 ring-ring rounded-md;
+    }
+    .icon {
+      @apply h-6;
+    }
+    .trigger-icon {
+      @apply ms-auto h-4;
+    }
+
+    &:hover {
+      @apply text-primary;
+    }
+  }
+
+  .selector-context {
+    @apply absolute flex flex-col top-full mt-0.5 min-w-full max-h-48 bg-white border rounded-md shadow-lg z-20 overflow-y-visible;
+
+    &:focus-visible {
+      @apply outline-none ring-2 ring-ring rounded-md;
+    }
+
+    ul.selector-options {
+      @apply flex flex-col divide-y max-h-full overflow-y-auto;
+
+      li {
+        @apply flex items-center gap-2 px-3 py-1.5 cursor-pointer text-foreground whitespace-nowrap;
+
+        &:hover {
+          @apply bg-neutral-50 text-primary;
+        }
+        &:focus-visible {
+          @apply outline-none bg-neutral-50;
+        }
+
+        .icon {
+          @apply h-5;
+        }
+
+        &.selected {
+          @apply font-semibold;
+        }
+        .selected-icon {
+          @apply h-4 stroke-2 ms-auto;
+        }
+      }
+    }
+  }
+
+  .search-input {
+    @apply bg-neutral-100 p-1 sticky top-0 shadow;
+  }
+}

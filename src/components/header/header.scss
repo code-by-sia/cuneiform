@@ -1,0 +1,15 @@
+header.page-header {
+  @apply p-6 gap-3 flex items-center justify-center border-b border-transparent;
+
+  h1 {
+    @apply text-2xl font-extralight text-zinc-800;
+  }
+
+  > input.input {
+    @apply text-sm py-1 shadow-sm;
+  }
+}
+
+div:hover header.page-header {
+  @apply border-neutral-100;
+}

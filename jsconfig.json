@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+        "baseUrl": "src",
+        "paths": {
+            "@/services/*": [
+                "services/*"
+            ],
+            "@/components/*": [
+                "components/*"
+            ],
+
+            "@/hooks/*": [
+                "hooks/*"
+            ],
+            "@/pages/*": [
+                "pages/*"
+            ],
+            "@/assets/*": [
+                "assets/*"
+            ],
+        },
+    },
+    "include": [
+        "**/*.js",
+        "**/*.jsx"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist",
+        ".parcel-cache"
+    ],
+}

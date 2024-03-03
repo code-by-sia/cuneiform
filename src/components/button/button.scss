@@ -1,0 +1,116 @@
+.button {
+  @apply inline-flex gap-2 items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors h-9 px-4 py-2;
+
+  &:hover {
+    @apply bg-neutral-50;
+  }
+
+  &:active {
+    @apply bg-neutral-100;
+  }
+
+  &.primary {
+    @apply bg-primary text-primary-foreground active:shadow-md hover:shadow-lg;
+  }
+
+  &.destructive {
+    @apply bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90;
+  }
+  &.outline {
+    @apply border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground;
+  }
+  &.secondary {
+    @apply bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/50;
+  }
+  &.ghost {
+    @apply bg-transparent shadow-none px-3 text-foreground border border-transparent;
+
+    &:hover {
+      @apply shadow-none bg-neutral-100 border;
+    }
+    &:active {
+      @apply shadow-none bg-neutral-200;
+    }
+  }
+  &.link {
+    @apply text-primary underline-offset-4 hover:underline;
+  }
+
+  &.tigger {
+    @apply bg-neutral-50 text-gray-600 border shadow-none hover:bg-neutral-100 active:shadow-sm;
+  }
+
+  &.icon {
+    @apply bg-transparent shadow-none p-0 text-foreground border border-transparent;
+
+    &:hover {
+      @apply shadow-none bg-neutral-100 border;
+    }
+    &:active {
+      @apply shadow-none bg-neutral-200;
+    }
+
+    > .icon {
+      @apply h-6 stroke-1;
+    }
+  }
+
+  &.toolbar {
+    @apply bg-neutral-200 shadow-none text-gray-600 font-normal rounded-full p-1.5 pe-3 h-7 gap-1;
+
+    &:active {
+      @apply shadow-none bg-gray-400;
+    }
+
+    &:hover {
+      @apply bg-gray-300 shadow-none;
+    }
+  }
+
+  &:disabled,
+  &.disabled {
+    @apply pointer-events-none opacity-50;
+  }
+
+  & :focus-visible {
+    @apply outline-none ring-1  ring-ring;
+  }
+
+  &.icon {
+    @apply h-9 w-9;
+  }
+
+  .icon {
+    @apply h-4;
+  }
+
+  &.sm {
+    @apply h-8 rounded-md px-3 text-sm;
+  }
+
+  &.lg {
+    @apply h-10 rounded-md px-8;
+  }
+
+  &.xl {
+    @apply h-16 text-xl font-extralight rounded-md px-8 gap-3;
+    .icon { @apply h-8 stroke-1; }
+  }
+
+}
+
+.group {
+  @apply divide-x;
+
+  button.button {
+    @apply rounded-none;
+  }
+
+  button.button:first-child {
+    @apply rounded-s;
+  }
+
+  button.button:last-child {
+    @apply rounded-e;
+  }
+}

@@ -1,0 +1,32 @@
+aside.side-bar {
+  @apply flex flex-col items-center bg-neutral-100 w-0 gap-3 overflow-y-scroll h-full duration-1000 overflow-x-clip;
+
+  .tree-nav,
+  .logo {
+    @apply min-w-max;
+  }
+
+  > header.header {
+    @apply w-full flex justify-between items-center p-4 sticky top-0 backdrop-blur-lg;
+
+    .icon {
+      @apply h-4;
+    }
+
+    &.main {
+      @apply bg-neutral-50 border-b p-6;
+    }
+  }
+
+  .tree-nav {
+    @apply w-72 -mx-4 px-4;
+
+    > .header {
+      @apply text-gray-500 text-sm font-extralight;
+    }
+  }
+
+  &.open {
+    @apply w-72 -left-72;
+  }
+}

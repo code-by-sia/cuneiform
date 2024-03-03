@@ -1,0 +1,7 @@
+.line {
+    &.v { @apply border-s mx-1 h-full;}
+    &.h { @apply border-t my-1 w-full;}
+
+    &.dot { @apply border-dotted; }
+    &.dash { @apply border-dashed; }
+}

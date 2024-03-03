@@ -1,0 +1,23 @@
+.drawer-header {
+  @apply flex gap-2 items-center p-3 shadow-none duration-700;
+  .icon {
+    @apply h-8 w-8 text-gray-500 bg-transparent duration-300 rounded-lg p-1 cursor-pointer;
+
+    &:hover {
+      @apply bg-neutral-200;
+    }
+    &:active {
+      @apply text-gray-700;
+    }
+  }
+
+  .title {
+    @apply flex flex-col flex-1 leading-none;
+    strong {
+      @apply font-light;
+    }
+    small {
+      @apply text-gray-400 font-extralight;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.logo {
+  text-shadow: 1px 1px 0 #eee;
+
+  @apply flex justify-start items-center text-gray-600 font-light text-lg gap-2;
+
+  span {
+    @apply text-gray-400 font-extralight;
+  }
+
+  .icon {
+    @apply text-primary/90 h-6;
+  }
+}
