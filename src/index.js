@@ -1,14 +1,14 @@
 import React, { Suspense } from 'react'
 import * as ReactDOM from 'react-dom/client'
 import { Provider } from 'react-redux'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createHashRouter, RouterProvider } from 'react-router-dom'
 import LoadingView from '@/components/loading-view'
 import { routes } from './routes'
 import { store } from './store'
 
 import './index.scss'
 
-const router = createBrowserRouter(routes, { basename: '/cuneiform' })
+const router = createHashRouter(routes)
 const root = document.getElementById('app')
 
 ReactDOM.createRoot(root).render(
